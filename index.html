@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Artisan Dining</title>
+    <meta name="description" content="Experience culinary excellence with every bite. An elegant and modern fine dining restaurant menu.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo">Aura.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>A Symphony of <br> Flavors</h1>
+            <p>Modern European cuisine crafted with passion and precision.</p>
+            <a href="#menu" class="btn">Discover Our Menu</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container container-restricted">
+            <div class="section-heading reveal">
+                <h2>Our Menu</h2>
+                <div class="separator"></div>
+                <p class="heading-subtitle">Carefully curated seasonal ingredients brought to life.</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-container reveal">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="mains">Main Course</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="beverages">Beverages</button>
+            </div>
+
+            <!-- Unified Menu Grid -->
+            <div class="menu-group reveal">
+                <ul class="menu-grid" id="full-menu">
+                    <!-- Featured / Chef's Picks first -->
+                    <li class="dish-card grid-item" data-category="mains">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Truffle Risotto" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Wild Mushroom Truffle Risotto</h4>
+                                <span class="price">$28</span>
+                            </div>
+                            <p class="dish-description">Arborio rice slowly cooked in a rich mushroom broth, finished with fresh black truffle shavings and aged parmesan.</p>
+                        </div>
+                    </li>
+                    <li class="dish-card grid-item" data-category="mains">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pan Seared Scallops" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Pan Seared Scallops</h4>
+                                <span class="price">$34</span>
+                            </div>
+                            <p class="dish-description">Jumbo sea scallops served over a bed of cauliflower purée with a delicate citrus beurre blanc.</p>
+                        </div>
+                    </li>
+
+                    <!-- Starters -->
+                    <li class="dish-card grid-item" data-category="starters">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1626844131082-256783844137?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Bruschetta" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Heirloom Tomato Bruschetta</h4>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="dish-description">Toasted artisanal sourdough topped with heirloom tomatoes, fresh basil, and balsamic glaze.</p>
+                        </div>
+                    </li>
+                    <li class="dish-card grid-item" data-category="starters">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Burrata" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Creamy Burrata Caprese</h4>
+                                <span class="price">$18</span>
+                            </div>
+                            <p class="dish-description">Fresh burrata cheese, roasted pine nuts, EVOO, and microgreens.</p>
+                        </div>
+                    </li>
+
+                    <!-- Mains -->
+                    <li class="dish-card grid-item" data-category="mains">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pasta" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Artisan Margherita Pizza</h4>
+                                <span class="price">$22</span>
+                            </div>
+                            <p class="dish-description">Wood-fired perfection with San Marzano tomatoes, buffalo mozzarella, and fresh basil.</p>
+                        </div>
+                    </li>
+                    <li class="dish-card grid-item" data-category="mains">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Steak" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Ribeye Steak Asado</h4>
+                                <span class="price">$45</span>
+                            </div>
+                            <p class="dish-description">Prime 12oz ribeye, charred asparagus, and a red wine shallot reduction.</p>
+                        </div>
+                    </li>
+
+                    <!-- Desserts -->
+                    <li class="dish-card grid-item" data-category="desserts">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dessert 1" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Dark Chocolate Lava Cake</h4>
+                                <span class="price">$12</span>
+                            </div>
+                            <p class="dish-description">Warm, gooey center served with Madagascar vanilla bean gelato.</p>
+                        </div>
+                    </li>
+                    <li class="dish-card grid-item" data-category="desserts">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cake" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Classic Tiramisu</h4>
+                                <span class="price">$10</span>
+                            </div>
+                            <p class="dish-description">Espresso-soaked ladyfingers layered with light mascarpone cream and cocoa powder.</p>
+                        </div>
+                    </li>
+
+                    <!-- Beverages -->
+                    <li class="dish-card grid-item" data-category="beverages">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544145945-f9042538a71d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cocktail" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Aura Signature Sangria</h4>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="dish-description">Red wine infused with citrus slices, berries, and a touch of brandy.</p>
+                        </div>
+                    </li>
+                    <li class="dish-card grid-item" data-category="beverages">
+                        <div class="dish-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Coffee" loading="lazy">
+                        </div>
+                        <div class="dish-details">
+                            <div class="dish-header">
+                                <h4>Artisan Crafted Espresso</h4>
+                                <span class="price">$5</span>
+                            </div>
+                            <p class="dish-description">Single-origin beans expertly roasted and pulled for the perfect crema.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="no-results" class="no-results" style="display: none;">
+                <p>No items found for this category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Aura.</h3>
+                <p>Elevating the art of dining through passion and flavor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
